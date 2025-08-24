@@ -24,9 +24,3 @@ Only 2 step is requires to set this bot!
 # That all 
 
 Enjoy the code to its fullest Preovided By CodeX Developement!
-
-<3
-
-> Main Creds goes to Olympus bot Thanks for this wonderful code and journey!
-
-https://github.com/sonujana26/olympus-bot/blob/main/LICENSE.txt
