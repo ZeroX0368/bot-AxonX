@@ -36,7 +36,7 @@ class Guild(Cog):
 
             embed.add_field(
                 name="**__About__**",
-                value=f"**Name : ** {guild.name}\n**ID :** {guild.id}\n**Owner <:owner:1329041011984433185> :** {guild.owner} (<@{guild.owner_id}>)\n**Created At : **{guild.created_at.month}/{guild.created_at.day}/{guild.created_at.year}\n**Members :** {len(guild.members)}",
+                value=f"**Name : ** {guild.name}\n**ID :** {guild.id}\n**Owner <a:aowner:1408876949115502664> :** {guild.owner} (<@{guild.owner_id}>)\n**Created At : **{guild.created_at.month}/{guild.created_at.day}/{guild.created_at.year}\n**Members :** {len(guild.members)}",
                 inline=False
             )
             embed.add_field(
@@ -46,7 +46,7 @@ class Guild(Cog):
             )
             embed.add_field(
                 name="**__Members__**",
-                value=f"""<:riverse_fun:1327829569264160870> Members : {len(guild.members)}\n <:user:1329379728603353108> Humans : {len(list(filter(lambda m: not m.bot, guild.members)))}\n<:icons_bot:1327829370881966092> Bots : {len(list(filter(lambda m: m.bot, guild.members)))}
+                value=f"""Members : {len(guild.members)}\n <:user:1408864581178097815> Humans : {len(list(filter(lambda m: not m.bot, guild.members)))}\n<:icons_plus:1409181232155201647> Bots : {len(list(filter(lambda m: m.bot, guild.members)))}
                 """,
                 inline=False
             )
@@ -72,7 +72,7 @@ Threads : {len(guild.threads)}
             if not guild.chunked:
                 await guild.chunk()
 
-            embed = discord.Embed(description="<:iconArrowRight:1327829310962401331> Prefix For This Server is `>`\n<:iconArrowRight:1327829310962401331> Get Started with `>help`\n<:iconArrowRight:1327829310962401331> For detailed guides, FAQ & information, visit our **[Support Server](https://discord.gg/codexdev)**",
+            embed = discord.Embed(description="<:iconArrowRight:1408875530928918610> Prefix For This Server is `>`\n<:iconArrowRight:1408875530928918610> Get Started with `>help`\n<:iconArrowRight:1408875530928918610> For detailed guides, FAQ & information, visit our **[Support Server](https://discord.gg/Zg2XkS5hq9)**",
     color=0xff0000)
             embed.set_author(name="Thanks for adding me!", icon_url=guild.me.display_avatar.url)
             embed.set_footer(text="Powered by Avalon Development™",)
@@ -117,7 +117,7 @@ Threads : {len(guild.threads)}
 
             embed.add_field(
                 name="**__About__**",
-                value=f"**Name : ** {guild.name}\n**ID :** {guild.id}\n**Owner <:axon_owner:1228227536207740989> :** {guild.owner} (<@{guild.owner_id}>)\n**Created At : **{guild.created_at.month}/{guild.created_at.day}/{guild.created_at.year}\n**Members :** {len(guild.members)}",
+                value=f"**Name : ** {guild.name}\n**ID :** {guild.id}\n**Owner <a:aowner:1408876949115502664> :** {guild.owner} (<@{guild.owner_id}>)\n**Created At : **{guild.created_at.month}/{guild.created_at.day}/{guild.created_at.year}\n**Members :** {len(guild.members)}",
                 inline=False
             )
             embed.add_field(
