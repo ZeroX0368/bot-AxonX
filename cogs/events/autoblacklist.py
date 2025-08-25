@@ -140,7 +140,7 @@ class AutoBlacklist(Cog):
                 await self.add_to_blacklist(user_id=ctx.author.id)
                 embed = discord.Embed(
                     title="<:icons_warning:1408865290019668080> User Blacklisted",
-                    description=f"**{ctx.author.mention} has been blacklisted for spamming commands. If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/codexdev) with any proof if possible.**",
+                    description=f"**{ctx.author.mention} has been blacklisted for spamming commands. If you believe this is a mistake, please contact our [Support Server](https://discord.gg/Zg2XkS5hq9) with any proof if possible.**",
                     color=0x000000
                 )
                 await ctx.reply(embed=embed)
