@@ -433,7 +433,7 @@ class General(commands.Cog):
   @ignore_check()
   @commands.cooldown(1, 3, commands.BucketType.user)
   async def invite(self, ctx: commands.Context):
-    embed = discord.Embed(title="Axon X Invite & Support!",
+    embed = discord.Embed(title="Avalon X Invite & Support!",
       description=
       f"> <:icons_plus:1409181232155201647> **[Avalon X - Invite Bot](https://discord.com/oauth2/authorize?client_id=1373611245206372444&permissions=8&integration_type=0&scope=bot+applications.commands)**\n> <:icons_plus:1409181232155201647> **[Avalon X - Support](https://discord.gg/u8hxkCWCFZ)**",
       color=0x0ba7ff)
