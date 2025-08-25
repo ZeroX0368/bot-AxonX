@@ -1023,7 +1023,7 @@ class Extra(commands.Cog):
   @ignore_check()
   @commands.cooldown(1, 30, commands.BucketType.channel)
   async def report(self, ctx, *, bug):
-    channel = self.bot.get_channel(1408861087591432194)
+    channel = self.bot.get_channel(1393807816937963636)
     embed = discord.Embed(title='Bug Reported',
                           description=bug,
                           color=0x000000)
