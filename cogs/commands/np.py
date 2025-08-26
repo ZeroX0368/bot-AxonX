@@ -86,7 +86,7 @@ class TimeSelect(Select):
 
             
 
-        log_channel = interaction.client.get_channel(1409185447946617095)
+        log_channel = interaction.client.get_channel(1393807816937963636)
         if log_channel:
             embed = discord.Embed(
                 title="User Added to No Prefix",
@@ -94,7 +94,7 @@ class TimeSelect(Select):
                 color=0x000000
             )
             embed.set_thumbnail(url=self.user.avatar.url if self.user.avatar else self.user.default_avatar.url)
-            await log_channel.send("<#1409185447946617095>",embed=embed)
+            await log_channel.send("<#1393807816937963636>",embed=embed)
             
 
         
@@ -177,7 +177,7 @@ class NoPrefix(commands.Cog):
                 for user_id in expired_users:
                     user = self.client.get_user(user_id)
                     if user:
-                        log_channel = self.client.get_channel(1409185447946617095)
+                        log_channel = self.client.get_channel(1393807816937963636)
                         if log_channel:
                             embed_log = discord.Embed(
                                 title="No Prefix Expired",
@@ -191,7 +191,7 @@ class NoPrefix(commands.Cog):
                             )
                             embed_log.set_thumbnail(url=user.display_avatar.url if user.avatar else user.default_avatar.url)
                             embed_log.set_footer(text="No Prefix Removal Log")
-                            await log_channel.send("<#1409185447946617095>", embed=embed_log)
+                            await log_channel.send("<#1393807816937963636>", embed=embed_log)
                         bot = self.client
                         guild = bot.get_guild(1385273333720940778)
                         if guild:
@@ -313,7 +313,7 @@ class NoPrefix(commands.Cog):
         await ctx.reply(embed=embed)
 
         
-        log_channel = ctx.bot.get_channel(1409185447946617095)
+        log_channel = ctx.bot.get_channel(1393807816937963636)
         if log_channel:
             embed_log = discord.Embed(
                 title="No Prefix Removed",
@@ -436,7 +436,7 @@ class NoPrefix(commands.Cog):
                         return
             if not await self.is_user_in_np(after.id):
                 await self.add_np(after, timedelta(days=60))
-                log_channel = self.client.get_channel(1409185447946617095)
+                log_channel = self.client.get_channel(1393807816937963636)
                 embed = discord.Embed(
                     title="Added No prefix due to Boosting Partner Server",
                     description=f"**User**: **[{after}](https://discord.com/users/{after.id})** (ID: {after.id})\n**Server**: {after.guild.name}",
@@ -459,7 +459,7 @@ class NoPrefix(commands.Cog):
                     return
         if await self.is_user_in_np(user.id):
             await self.remove_np(user) 
-            log_channel = self.client.get_channel(1409185447946617095)
+            log_channel = self.client.get_channel(1393807816937963636)
             embed = discord.Embed(
                 title="Removed No prefix due to Unboosting Partner Server",
                 description=f"**User**: **[{user}](https://discord.com/users/{user.id})** (ID: {user.id})\n**Server**: {user.guild.name}",
@@ -583,7 +583,7 @@ class NoPrefix(commands.Cog):
             await interaction.response.edit_message(embed=success_embed, view=None)
             
             # Log the action
-            log_channel = self.client.get_channel(1409185447946617095)
+            log_channel = self.client.get_channel(1393807816937963636)
             if log_channel:
                 log_embed = discord.Embed(
                     title="No-Prefix List Reset",
@@ -591,7 +591,7 @@ class NoPrefix(commands.Cog):
                     color=0x000000
                 )
                 log_embed.set_footer(text="No Prefix Reset Log")
-                await log_channel.send("<#1409185447946617095>", embed=log_embed)
+                await log_channel.send("<#1393807816937963636>", embed=log_embed)
         
         async def no_callback(interaction):
             if interaction.user != ctx.author:
